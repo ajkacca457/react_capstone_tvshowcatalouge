@@ -9,6 +9,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+
         <Navbar />
         <Route exact path="/">
           <Redirect to="/home" />

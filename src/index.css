@@ -111,3 +111,25 @@ body {
   width: 50%;
   margin: auto;
 }
+
+.showinfo {
+  background-image: url("./images/homebg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding-top: 5%;
+  height: 100vh;
+}
+
+.showinfocont {
+  width: 70%;
+  margin: auto;
+}
+
+.showdetails {
+  flex: 2;
+  padding: 2%;
+  text-align: center;
+  font-family: 'Slabo 27px', serif;
+  font-size: 105%;
+}

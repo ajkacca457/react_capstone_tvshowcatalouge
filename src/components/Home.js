@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Tvshow1 from '../images/tvshow1.jpeg';
 import Tvshow2 from '../images/tvshow2.jpg';
 
@@ -9,7 +10,7 @@ const Home = () => (
       <div className="leftcont text-white text-center">
         <h2>TVWORLD</h2>
         <h3 className="my-2">Home of Your Entertainment</h3>
-        <button type="button" className="btn-warning rounded">Browse Shows</button>
+        <Link to="/shows" className="btn btn-warning rounded">Browse Shows</Link>
       </div>
 
       <div className="vr" />

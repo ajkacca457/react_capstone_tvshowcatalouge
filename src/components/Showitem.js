@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 const Showitem = props => {
   const { show: { name, image: { medium }, rating: { average } } } = props;
-  console.log(props);
   return (
     <div className="showitem">
       <img src={medium} alt="showimage" />
@@ -14,7 +13,7 @@ const Showitem = props => {
           IMDB:
           {average}
         </h5>
-        <button type="button" className="btn-danger">Show Info</button>
+        <button type="button" className="btn btn-danger">Show Info</button>
       </div>
     </div>
   );
