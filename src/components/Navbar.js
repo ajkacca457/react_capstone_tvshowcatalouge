@@ -7,11 +7,11 @@ const Navbar = () => (
       <img src={Navlogo} alt="tvshowlogo" style={{ width: '35px', height: '35px' }} />
       <h5 className="ml-3 text-white">TVWORLD</h5>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon" />
+        <i className="fas fa-bars text-light" />
       </button>
 
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="navbar-nav ml-auto">
+        <ul className="navbar-nav ml-auto text-center">
           <li className="nav-item active">
             <a className="nav-link text-white" href="#home">
               Home
