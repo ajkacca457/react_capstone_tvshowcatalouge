@@ -1,8 +1,10 @@
+import Navbar from './components/Navbar';
+
 function App() {
   return (
     <div className="App">
 
-      <h1>This is react Capstone</h1>
+      <Navbar />
 
     </div>
   );
