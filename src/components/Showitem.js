@@ -27,7 +27,7 @@ Showitem.propTypes = {
       medium: PropTypes.string,
     }),
     rating: PropTypes.shape({
-      average: PropTypes.string,
+      average: PropTypes.number,
     }),
   }).isRequired,
 };
