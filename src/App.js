@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar';
-import Home from './components/Home';
+// import Home from './components/Home';
 // import About from './components/About';
+import Showlist from './components/Showlist';
 import Footer from './components/Footer';
 
 function App() {
@@ -8,8 +9,9 @@ function App() {
     <div className="App">
 
       <Navbar />
-      <Home />
-      {/*  <About /> */}
+      {/* <Home />
+        <About /> */}
+      <Showlist />
       <Footer />
 
     </div>

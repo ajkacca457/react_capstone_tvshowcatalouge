@@ -83,3 +83,25 @@ body {
 .aboutimg {
   width: 90%;
 }
+
+.showlist {
+  background-image: url("./images/homebg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.showcont {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin:auto;
+  padding: 5% 0;
+  width: 80%;
+  text-align: center;
+  grid-gap: 10px;
+}
+
+.showitem {
+  background-color: white;
+  padding: 2% 1%;
+  font-family: 'Slabo 27px', serif;
+}
