@@ -8,3 +8,78 @@ body {
   text-align: center;
   font-family: 'Slabo 27px', serif;
 }
+
+.navbar {
+  width: 100%;
+  font-family: 'Slabo 27px', serif;
+  font-size: 115%;
+  background-color: #154360;
+  top: 0;
+  left: 0;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #154360;
+  text-align: center;
+  width: 100%;
+  font-family: 'Slabo 27px', serif;
+}
+
+.home {
+  background-image: url("./images/homebg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height:100vh;
+}
+
+.tvshow {
+  width: 250px;
+  height: 350px;
+}
+
+.s2 {
+  margin-left: -50px;
+  margin-top: -30px;
+  z-index: -100;
+}
+
+.content {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  font-family: 'Slabo 27px', serif;
+}
+
+.vr {
+  background-color: rgba(255, 255, 255, 0.06);
+  height: 50%;
+  width: 2px;
+}
+
+.about {
+  background-image: url("./images/homebg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.abtcont {
+  text-align: center;
+  font-family: 'Slabo 27px', serif;
+  width: 60%;
+  padding: 2%;
+  font-size: 115%;
+  border-radius: 5px;
+}
+
+.aboutimg {
+  width: 90%;
+}

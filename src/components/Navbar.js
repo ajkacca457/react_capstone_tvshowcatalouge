@@ -1,9 +1,11 @@
 import React from 'react';
+import Navlogo from '../images/navlogo.png';
 
 const Navbar = () => (
   <>
-    <nav className="navbar navbar-expand-lg  bg-info px-4">
-      <a className="navbar-brand" href="#home">Navbar</a>
+    <nav className="navbar navbar-expand-lg px-4 position-fixed">
+      <img src={Navlogo} alt="tvshowlogo" style={{ width: '35px', height: '35px' }} />
+      <h5 className="ml-3 text-white">TVWORLD</h5>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon" />
       </button>
