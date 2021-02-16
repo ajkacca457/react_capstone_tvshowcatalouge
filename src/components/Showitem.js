@@ -14,6 +14,7 @@ const Showitem = props => {
           IMDB:
           {average}
         </h5>
+        <button type="button" className="btn-danger">Show Info</button>
       </div>
     </div>
   );
