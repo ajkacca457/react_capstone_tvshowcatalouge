@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Showitem from './Showitem';
+import Filter from './Filter';
 
 const Showlist = () => {
   const [shows, setShows] = useState([]);
@@ -9,6 +10,7 @@ const Showlist = () => {
   }, []);
   return (
     <div className="showlist">
+      <Filter />
       <div className="showcont">
         {shows.map(item => (
           <Showitem key={item.id} show={item} />
