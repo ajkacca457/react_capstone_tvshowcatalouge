@@ -13,7 +13,6 @@ export default (state = initialstate, action) => {
         show: action.payload,
       };
     case SHOW_ERRORS:
-      console.log(action.payload);
       return {
         ...state,
         error: action.payload,

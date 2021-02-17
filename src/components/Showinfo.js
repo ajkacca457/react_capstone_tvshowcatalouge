@@ -8,7 +8,6 @@ import { connect } from 'react-redux';
 import { getsingleShow } from './actions/showActions';
 
 const Showinfo = props => {
-  console.log(props);
   const {
     name, language, officialSite, summary,
     runtime, status, premiered, getsingleShow,
@@ -21,37 +20,35 @@ const Showinfo = props => {
 
   return (
     <div className="showinfo">
-      <div className="showinfocont d-block d-md-flex">
-        <div className="showimg" />
-        <div className="showdetails bg-light">
-          <h3>{name}</h3>
+      <div className="showinfocont d-block d-md-flex bg-light">
+        <div className="showdetails">
+          <h2>{name}</h2>
           <p>
             Language :
             {language}
           </p>
           <p>
             Website:
-            {officialSite}
+            <h5>{officialSite}</h5>
           </p>
           <p className="text-justify">
             {summary}
           </p>
-          <div className="subinfo d-flex justify-content-around">
-            <p>
-              First premiered:
-              {premiered}
-            </p>
-            <p>
-              Runtime:
+          <p>
+            First premiered:
+            <h5>{premiered}</h5>
+          </p>
+          <p>
+            Runtime:
+            <h5>
               {runtime}
-              {' '}
               min
-            </p>
-            <p>
-              Status:
-              {status}
-            </p>
-          </div>
+            </h5>
+          </p>
+          <p>
+            Status:
+            <h5>{status}</h5>
+          </p>
           <Link to="/shows" className="btn btn-danger">Back</Link>
         </div>
       </div>
@@ -73,13 +70,12 @@ Showinfo.propTypes = {
 const mapStateToProps = state => (
   {
     name: state.singleshow.show.name,
-    image: state.singleshow.show.image.original,
+    language: state.singleshow.show.language,
     officialSite: state.singleshow.show.officialSite,
     summary: state.singleshow.show.summary,
     runtime: state.singleshow.show.runtime,
     status: state.singleshow.show.status,
     premiered: state.singleshow.show.premiered,
-
   });
 
 export default connect(mapStateToProps, { getsingleShow })(Showinfo);

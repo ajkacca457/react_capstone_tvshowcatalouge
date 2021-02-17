@@ -119,11 +119,16 @@ body {
   background-repeat: no-repeat;
   padding: 6% 0px;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .showinfocont {
   width: 70%;
   margin: auto;
+  height: 60vh;
+  overflow-x: scroll;
 }
 
 .showdetails {
@@ -132,5 +137,4 @@ body {
   text-align: center;
   font-family: 'Slabo 27px', serif;
   font-size: 110%;
-  overflow-x: scroll;
 }
