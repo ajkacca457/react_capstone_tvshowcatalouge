@@ -33,7 +33,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  height:100vh;
+  height: 100vh;
 }
 
 .tvshow {
@@ -65,10 +65,10 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  height:100vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
 }
 
 .abtcont {
@@ -91,10 +91,11 @@ body {
   background-repeat: no-repeat;
   padding-top: 6%;
 }
+
 .showcont {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin:auto;
+  margin: auto;
   padding: 5% 0;
   width: 80%;
   text-align: center;
@@ -117,7 +118,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  padding: 6% 0px;
+  padding: 6% 0;
   height: 100vh;
   display: flex;
   justify-content: center;
