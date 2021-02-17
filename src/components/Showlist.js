@@ -1,13 +1,17 @@
-import React, { useState, useEffect } from 'react';
+/* eslint-disable */
+import React, { useEffect } from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import Showitem from './Showitem';
 import Filter from './Filter';
+import {Info,getShows} from "./actions/showActions"
 
-const Showlist = () => {
-  const [shows, setShows] = useState([]);
+const Showlist =({show:{shows,error},getShows})=> {
 
   useEffect(() => {
-    fetch('http://api.tvmaze.com/shows').then(res => res.json()).then(data => setShows(data));
+    getShows()
   }, []);
+
   return (
     <div className="showlist">
       <Filter />
@@ -20,4 +24,16 @@ const Showlist = () => {
   );
 };
 
-export default Showlist;
+Showlist.propTypes = {
+  tvshow: PropTypes.shape({
+    tvshow: PropTypes.string,
+  }),
+};
+
+const mapStateToProps = state => (
+  {
+  show: state.show,
+});
+
+export default connect(mapStateToProps,{getShows})(Showlist);
+/* eslint-enable */
