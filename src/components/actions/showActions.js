@@ -1,7 +1,5 @@
 import { GET_SHOWS, GET_SINGLE_SHOW, SHOW_ERRORS } from './types';
 
-export const Info = 'what';
-
 export const getShows = () => dispatch => {
   try {
     fetch('http://api.tvmaze.com/shows')
