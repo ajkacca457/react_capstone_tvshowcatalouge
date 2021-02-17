@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 const Showitem = props => {
   const {
     show: {
-      id, name, image: { medium }, rating: { average },
+      id, image: { medium }, name, rating: { average },
     },
   } = props;
   return (

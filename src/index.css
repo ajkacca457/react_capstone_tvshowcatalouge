@@ -132,4 +132,5 @@ body {
   text-align: center;
   font-family: 'Slabo 27px', serif;
   font-size: 110%;
+  overflow-x: scroll;
 }

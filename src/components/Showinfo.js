@@ -1,32 +1,28 @@
-/* eslint-disable */
+/* eslint-disable react/forbid-prop-types */
+
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { useParams } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
+
 import { connect } from 'react-redux';
-import {getsingleShow} from "./actions/showActions"
+import { getsingleShow } from './actions/showActions';
 
-
-const Showinfo = (props) => {
+const Showinfo = props => {
   console.log(props);
-  const {singleshow:{show,error},getsingleShow}=props;
+  const {
+    name, language, officialSite, summary,
+    runtime, status, premiered, getsingleShow,
+  } = props;
 
-  const {id}=useParams();
+  const { id } = useParams();
   useEffect(() => {
     getsingleShow(`http://api.tvmaze.com/shows/${id}`);
   }, []);
 
-  const {
-    name, summary, image: { original }, language, officialSite, rating: { average },
-    runtime, status
-  } = show;
-
   return (
     <div className="showinfo">
       <div className="showinfocont d-block d-md-flex">
-        <div className="showimg">
-          <img src={original} alt="showimg" style={{ width: '300px', height: '400px' }} />
-        </div>
+        <div className="showimg" />
         <div className="showdetails bg-light">
           <h3>{name}</h3>
           <p>
@@ -38,12 +34,12 @@ const Showinfo = (props) => {
             {officialSite}
           </p>
           <p className="text-justify">
-            {summary.split("").slice(0,400).join("")}
+            {summary}
           </p>
           <div className="subinfo d-flex justify-content-around">
             <p>
-              Imdb rating:
-              {average}
+              First premiered:
+              {premiered}
             </p>
             <p>
               Runtime:
@@ -63,11 +59,27 @@ const Showinfo = (props) => {
   );
 };
 
+Showinfo.propTypes = {
+  name: PropTypes.string.isRequired,
+  language: PropTypes.string.isRequired,
+  officialSite: PropTypes.string.isRequired,
+  summary: PropTypes.string.isRequired,
+  runtime: PropTypes.string.isRequired,
+  status: PropTypes.string.isRequired,
+  premiered: PropTypes.string.isRequired,
+  getsingleShow: PropTypes.func.isRequired,
+};
 
 const mapStateToProps = state => (
   {
-  singleshow: state.singleshow,
-});
+    name: state.singleshow.show.name,
+    image: state.singleshow.show.image.original,
+    officialSite: state.singleshow.show.officialSite,
+    summary: state.singleshow.show.summary,
+    runtime: state.singleshow.show.runtime,
+    status: state.singleshow.show.status,
+    premiered: state.singleshow.show.premiered,
 
-export default connect(mapStateToProps,{getsingleShow})(Showinfo);
-/* eslint-enable */
+  });
+
+export default connect(mapStateToProps, { getsingleShow })(Showinfo);

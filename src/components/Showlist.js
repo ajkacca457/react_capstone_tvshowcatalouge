@@ -1,15 +1,15 @@
-/* eslint-disable */
+/* eslint-disable react/forbid-prop-types */
+
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Showitem from './Showitem';
 import Filter from './Filter';
-import {getShows} from "./actions/showActions"
+import { getShows } from './actions/showActions';
 
-const Showlist =({show:{shows,error},getShows})=> {
-
+const Showlist = ({ shows, getShows }) => {
   useEffect(() => {
-    getShows()
+    getShows();
   }, []);
 
   return (
@@ -25,15 +25,13 @@ const Showlist =({show:{shows,error},getShows})=> {
 };
 
 Showlist.propTypes = {
-  tvshow: PropTypes.shape({
-    tvshow: PropTypes.string,
-  }),
+  shows: PropTypes.object.isRequired,
+  getShows: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = state => (
   {
-  show: state.show,
-});
+    shows: state.show.shows,
+  });
 
-export default connect(mapStateToProps,{getShows})(Showlist);
-/* eslint-enable */
+export default connect(mapStateToProps, { getShows })(Showlist);

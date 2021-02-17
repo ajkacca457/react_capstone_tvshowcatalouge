@@ -2,7 +2,7 @@ import { GET_SHOWS, GET_SINGLE_SHOW, SHOW_ERRORS } from './types';
 
 export const Info = 'what';
 
-export const getShows = () => async dispatch => {
+export const getShows = () => dispatch => {
   try {
     fetch('http://api.tvmaze.com/shows')
       .then(response => response.json())
@@ -20,7 +20,7 @@ export const getShows = () => async dispatch => {
   }
 };
 
-export const getsingleShow = url => async dispatch => {
+export const getsingleShow = url => dispatch => {
   try {
     fetch(url)
       .then(response => response.json())
