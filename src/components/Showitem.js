@@ -8,8 +8,6 @@ const Showitem = props => {
       id, name, image: { medium }, rating: { average },
     },
   } = props;
-
-  console.log(id);
   return (
     <div className="showitem">
       <img src={medium} alt="showimage" />

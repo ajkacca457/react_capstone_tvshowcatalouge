@@ -117,7 +117,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  padding-top: 5%;
+  padding: 6% 0px;
   height: 100vh;
 }
 
@@ -131,5 +131,5 @@ body {
   padding: 2%;
   text-align: center;
   font-family: 'Slabo 27px', serif;
-  font-size: 105%;
+  font-size: 110%;
 }

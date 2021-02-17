@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Showitem from './Showitem';
 import Filter from './Filter';
-import {Info,getShows} from "./actions/showActions"
+import {getShows} from "./actions/showActions"
 
 const Showlist =({show:{shows,error},getShows})=> {
 
