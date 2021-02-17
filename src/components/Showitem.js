@@ -1,8 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 const Showitem = props => {
-  const { show: { name, image: { medium }, rating: { average } } } = props;
+  const {
+    show: {
+      id, name, image: { medium }, rating: { average },
+    },
+  } = props;
+
+  console.log(id);
   return (
     <div className="showitem">
       <img src={medium} alt="showimage" />
@@ -13,7 +20,7 @@ const Showitem = props => {
           IMDB:
           {average}
         </h5>
-        <button type="button" className="btn btn-danger">Show Info</button>
+        <Link to={`/shows/${id}`} className="btn btn-danger">Show Info</Link>
       </div>
     </div>
   );
@@ -21,6 +28,7 @@ const Showitem = props => {
 
 Showitem.propTypes = {
   show: PropTypes.shape({
+    id: PropTypes.string,
     name: PropTypes.string,
     image: PropTypes.shape({
       medium: PropTypes.string,
