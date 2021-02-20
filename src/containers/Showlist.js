@@ -3,18 +3,18 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import Showitem from './Showitem';
-import Filter from './Filter';
-import { getShows } from './actions/showActions';
+import Showitem from '../components/Showitem';
+import { fetchShows } from '../redux/actions/allactions';
 
-const Showlist = ({ shows, getShows }) => {
+const Showlist = ({ shows, fetchShows }) => {
   useEffect(() => {
-    getShows();
+    fetchShows('http://api.tvmaze.com/shows?page=1');
   }, []);
+
+  console.log(shows);
 
   return (
     <div className="showlist">
-      <Filter />
       <div className="showcont">
         {shows.map(item => (
           <Showitem key={item.id} show={item} />
@@ -26,12 +26,16 @@ const Showlist = ({ shows, getShows }) => {
 
 Showlist.propTypes = {
   shows: PropTypes.object.isRequired,
-  getShows: PropTypes.func.isRequired,
+  fetchShows: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = state => (
   {
-    shows: state.show.shows,
+    shows: state.shows,
   });
 
-export default connect(mapStateToProps, { getShows })(Showlist);
+const mapDispatchToProps = dispatch => ({
+  fetchShows: url => dispatch(fetchShows(url)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Showlist);
