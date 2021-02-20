@@ -1,37 +1,59 @@
 /* eslint-disable react/forbid-prop-types */
+/* eslint-disable array-callback-return */
+/* eslint-disable consistent-return */
+/* eslint-disable max-len */
 
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Showitem from '../components/Showitem';
+import Loading from '../components/loading';
 import { fetchShows } from '../redux/actions/allactions';
 
-const Showlist = ({ shows, fetchShows }) => {
+const Showlist = ({
+  loading, shows, error, fetchShows,
+}) => {
   useEffect(() => {
     fetchShows('http://api.tvmaze.com/shows?page=1');
   }, []);
 
-  console.log(shows);
+  if (loading) {
+    return (<Loading />);
+  }
 
-  return (
-    <div className="showlist">
-      <div className="showcont">
-        {shows.map(item => (
-          <Showitem key={item.id} show={item} />
-        ))}
+  if (error) {
+    return (
+      <div className="error text-danger">
+        <h2 className="bg-white  p-3 rounded">{error}</h2>
       </div>
-    </div>
-  );
+    );
+  }
+
+  if (shows) {
+    return (
+      <div className="showlist">
+        <div className="showcont">
+          {shows.map(item => (
+            <Showitem key={item.id} show={item} />
+          ))}
+        </div>
+      </div>
+    );
+  }
 };
 
 Showlist.propTypes = {
-  shows: PropTypes.object.isRequired,
+  loading: PropTypes.bool.isRequired,
+  shows: PropTypes.array.isRequired,
+  error: PropTypes.string.isRequired,
   fetchShows: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = state => (
   {
+    loading: state.loading,
     shows: state.shows,
+    error: state.error,
   });
 
 const mapDispatchToProps = dispatch => ({

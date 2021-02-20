@@ -92,6 +92,17 @@ body {
   padding-top: 6%;
 }
 
+.loading,.error {
+  background-image: url("./images/homebg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .showcont {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;

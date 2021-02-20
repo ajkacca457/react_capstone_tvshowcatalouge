@@ -26,7 +26,7 @@ const Showitem = props => {
 
 Showitem.propTypes = {
   show: PropTypes.shape({
-    id: PropTypes.string,
+    id: PropTypes.number,
     name: PropTypes.string,
     image: PropTypes.shape({
       medium: PropTypes.string,
