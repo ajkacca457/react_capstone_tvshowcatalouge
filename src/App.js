@@ -4,8 +4,6 @@ import {
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
-import Showlist from './components/Showlist';
-import Showinfo from './components/Showinfo';
 import Footer from './components/Footer';
 
 function App() {
@@ -20,8 +18,6 @@ function App() {
           </Route>
           <Route exac path="/home" component={Home} />
           <Route exac path="/about" component={About} />
-          <Route exac path="/shows/:id" component={Showinfo} />
-          <Route exac path="/shows" component={Showlist} />
         </Switch>
         <Footer />
 
