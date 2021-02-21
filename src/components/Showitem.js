@@ -16,7 +16,8 @@ const Showitem = props => {
         {' '}
         <h5>
           IMDB:
-          {average}
+          {' '}
+          <b>{average}</b>
         </h5>
         <Link to={`/shows/${id}`} className="btn btn-danger">Show Info</Link>
       </div>

@@ -117,6 +117,7 @@ body {
   background-color: white;
   padding: 2% 1%;
   font-family: 'Slabo 27px', serif;
+  border-radius: 5px;
 }
 
 .filter {

@@ -6,7 +6,6 @@ import Tvshow2 from '../images/tvshow2.jpg';
 const Home = () => (
   <div className="home">
     <div className="content d-block d-sm-flex justify-content-between align-items-center">
-
       <div className="leftcont text-white text-center">
         <h2>TVWORLD</h2>
         <h3 className="my-2">Home of Your Entertainment</h3>

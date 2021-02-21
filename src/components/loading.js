@@ -1,8 +1,12 @@
 import React from 'react';
+import GridLoader from 'react-spinners/GridLoader';
 
 const Loading = () => (
   <div className="loading">
-    <h3 className="bg-white  p-3 rounded">Loading Shows ....</h3>
+    <div className="bg-white  p-4 rounded text-center">
+      <GridLoader color="red" />
+      <h4 className="text-danger">Loading Shows ....</h4>
+    </div>
   </div>
 );
 
