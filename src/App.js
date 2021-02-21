@@ -20,8 +20,8 @@ function App() {
           </Route>
           <Route exac path="/home" component={Home} />
           <Route exac path="/about" component={About} />
-          <Route exac path="/shows" component={Showlist} />
           <Route exac path="/shows/:id" component={Showinfo} />
+          <Route exac path="/shows" component={Showlist} />
         </Switch>
         <Footer />
 
