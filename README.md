@@ -6,6 +6,7 @@ This is a capstone project of microverse redux-react module. This is a catalogue
 
 ![screenshot](./src/images/interface1.PNG)
 ![screenshot](./src/images/interface2.PNG)
+![screenshot](./src/images/interface4.PNG)
 ![screenshot](./src/images/interface3.PNG)
 
 ## Live Demo
