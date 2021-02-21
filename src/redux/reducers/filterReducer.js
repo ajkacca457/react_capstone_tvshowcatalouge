@@ -1,4 +1,4 @@
-import { CHANGE_FILTER } from '../actions/type';
+import { CHANGE_FILTER } from '../actions/filterAction';
 
 const initialstate = {
   filter: '',

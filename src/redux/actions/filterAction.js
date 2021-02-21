@@ -1,6 +1,6 @@
-import { CHANGE_FILTER } from './type';
+export const CHANGE_FILTER = 'CHANGE_FILTER';
 
-const changeFilter = filter => ({
+export const changeFilter = filter => ({
   type: CHANGE_FILTER,
   payload: filter,
 });

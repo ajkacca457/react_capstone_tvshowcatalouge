@@ -13,8 +13,6 @@ import Loading from '../components/loading';
 const Showinfo = ({
   loading, show, error, fetchShow,
 }) => {
-  console.log(show);
-
   const { id } = useParams();
 
   useEffect(() => {
