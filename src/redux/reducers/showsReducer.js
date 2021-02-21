@@ -1,8 +1,11 @@
-import { FETCH_SHOWS_REQUEST, FETCH_SHOWS_SUCCESS, FETCH_SHOWS_FAILURE } from '../actions/type';
+import {
+  FETCH_SHOWS_REQUEST, FETCH_SHOWS_SUCCESS, FETCH_SHOWS_FAILURE, FETCH_SHOW_SUCCESS,
+} from '../actions/type';
 
 const initialstate = {
   loading: false,
   shows: [],
+  show: {},
   error: '',
 };
 
@@ -18,13 +21,23 @@ const showsReducer = (state = initialstate, action) => {
       return {
         loading: false,
         shows: action.payload,
+        show: {},
         error: '',
+      };
+
+    case FETCH_SHOW_SUCCESS:
+      return {
+        ...state,
+        loading: false,
+        shows: [],
+        show: action.payload,
       };
 
     case FETCH_SHOWS_FAILURE:
       return {
         loading: false,
         shows: [],
+        show: {},
         error: action.payload,
       };
 
