@@ -16,7 +16,7 @@ export const fetchShowsFaluire = error => ({
 });
 
 export const fetchShows = url => (dispatch => {
-  dispatch(fetchShowsRequest);
+  dispatch(fetchShowsRequest());
   axios.get(url)
     .then(response => {
       const shows = response.data;

@@ -16,7 +16,6 @@ const showsReducer = (state = initialstate, action) => {
 
     case FETCH_SHOWS_SUCCESS:
       return {
-        ...state,
         loading: false,
         shows: action.payload,
         error: '',
@@ -24,7 +23,6 @@ const showsReducer = (state = initialstate, action) => {
 
     case FETCH_SHOWS_FAILURE:
       return {
-        ...state,
         loading: false,
         shows: [],
         error: action.payload,

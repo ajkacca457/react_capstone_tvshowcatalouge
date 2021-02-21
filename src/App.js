@@ -6,6 +6,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Footer from './components/Footer';
 import Showlist from './containers/Showlist';
+import Showinfo from './containers/Showinfo';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route exac path="/home" component={Home} />
           <Route exac path="/about" component={About} />
           <Route exac path="/shows" component={Showlist} />
+          <Route exac path="/shows/:id" component={Showinfo} />
         </Switch>
         <Footer />
 

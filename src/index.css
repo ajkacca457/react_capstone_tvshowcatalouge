@@ -107,7 +107,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: auto;
-  padding: 5% 0;
+  padding: 7% 0;
   width: 80%;
   text-align: center;
   grid-gap: 10px;
