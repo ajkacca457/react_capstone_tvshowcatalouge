@@ -16,7 +16,7 @@ const Showinfo = ({
   const { id } = useParams();
 
   useEffect(() => {
-    fetchShow(`http://api.tvmaze.com/shows/${id}`);
+    fetchShow(`https://api.tvmaze.com/shows/${id}`);
   }, []);
 
   if (loading) {

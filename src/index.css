@@ -100,6 +100,7 @@ body {
   padding: 2%;
   font-size: 115%;
   border-radius: 5px;
+  color: black;
 }
 
 .aboutimg {
@@ -146,6 +147,7 @@ body {
   padding: 2% 1%;
   font-family: 'Slabo 27px', serif;
   border-radius: 5px;
+  color: black;
 }
 
 .filter {
@@ -178,4 +180,5 @@ body {
   font-family: 'Slabo 27px', serif;
   font-size: 115%;
   overflow-y: scroll;
+  color: black;
 }

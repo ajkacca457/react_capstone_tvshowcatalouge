@@ -16,7 +16,7 @@ const Showlist = ({
   loading, shows, error, filter, fetchShows, changeFilter,
 }) => {
   useEffect(() => {
-    fetchShows('http://api.tvmaze.com/shows?page=1');
+    fetchShows('https://api.tvmaze.com/shows?page=1');
   }, []);
 
   if (loading) {

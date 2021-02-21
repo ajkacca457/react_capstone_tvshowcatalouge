@@ -11,7 +11,7 @@ This is a capstone project of microverse redux-react module. This is a catalogue
 
 ## Live Demo
 
-[TVWORLD](https://blissful-meninsky-3fa5c8.netlify.app/shows)
+[TVWORLD](https://tvworld.netlify.app/home)
 
 ## Built With
 
