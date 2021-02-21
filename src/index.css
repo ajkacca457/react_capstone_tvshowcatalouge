@@ -129,24 +129,46 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  padding: 6% 0;
+  padding: 8% 0;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
 .showinfocont {
   width: 70%;
   margin: auto;
-  height: 60vh;
-  overflow-x: scroll;
+  border: 2px solid white;
+  border-radius: 5px;
 }
 
 .showdetails {
   flex: 2;
   padding: 2%;
+  height: 400px;
   text-align: center;
   font-family: 'Slabo 27px', serif;
-  font-size: 110%;
+  font-size: 115%;
+  overflow-y:scroll;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #f66;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #70bde8;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5993e5;
 }
