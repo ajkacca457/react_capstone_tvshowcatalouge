@@ -9,6 +9,7 @@ import { connect } from 'react-redux';
 import Showitem from '../components/Showitem';
 import Loading from '../components/loading';
 import { fetchShows } from '../redux/actions/allactions';
+import Filter from '../components/Filter';
 
 const Showlist = ({
   loading, shows, error, fetchShows,
@@ -32,6 +33,7 @@ const Showlist = ({
   if (shows) {
     return (
       <div className="showlist">
+        <Filter />
         <div className="showcont">
           {shows.map(item => (
             <Showitem key={item.id} show={item} />
@@ -51,9 +53,9 @@ Showlist.propTypes = {
 
 const mapStateToProps = state => (
   {
-    loading: state.loading,
-    shows: state.shows,
-    error: state.error,
+    loading: state.shows.loading,
+    shows: state.shows.shows,
+    error: state.shows.error,
   });
 
 const mapDispatchToProps = dispatch => ({

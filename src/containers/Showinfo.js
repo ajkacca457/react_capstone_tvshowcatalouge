@@ -63,6 +63,18 @@ const Showinfo = ({
             </p>
             <div className="subinfo">
               <p>
+                Genres:
+                {show.genres && show.genres.map(genre => (
+                  <span key={genre}>
+                    <b>
+                      {' '}
+                      {genre}
+                    </b>
+                  </span>
+
+                ))}
+              </p>
+              <p>
                 {' '}
                 Type:
                 <b>
@@ -122,9 +134,9 @@ Showinfo.propTypes = {
 
 const mapStateToProps = state => (
   {
-    loading: state.loading,
-    show: state.show,
-    error: state.error,
+    loading: state.shows.loading,
+    show: state.shows.show,
+    error: state.shows.error,
   });
 
 const mapDispatchToProps = dispatch => ({
