@@ -2,7 +2,7 @@ import {
   FETCH_SHOWS_REQUEST, FETCH_SHOWS_SUCCESS, FETCH_SHOWS_FAILURE, FETCH_SHOW_SUCCESS,
 } from '../actions/type';
 
-const initialstate = {
+export const initialstate = {
   loading: false,
   shows: [],
   show: {},

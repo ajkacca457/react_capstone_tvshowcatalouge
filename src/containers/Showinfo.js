@@ -35,8 +35,8 @@ const Showinfo = ({
     return (
       <div className="showinfo">
         <div className="showinfocont d-block d-md-flex">
-          <div className="showimg">
-            <img src={show.image && show.image.original} alt="display" style={{ width: '300px', height: '400px' }} />
+          <div className="showimg bg-white">
+            <img src={show.image && show.image.original} alt="display" className="info-img" />
           </div>
           <div className="showdetails bg-light">
             <h3>{show.name}</h3>

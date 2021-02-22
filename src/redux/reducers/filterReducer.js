@@ -1,6 +1,6 @@
 import { CHANGE_FILTER } from '../actions/filterAction';
 
-const initialstate = {
+export const initialstate = {
   filter: '',
 };
 

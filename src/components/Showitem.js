@@ -10,16 +10,16 @@ const Showitem = props => {
   } = props;
   return (
     <div className="showitem">
-      <img src={medium} alt="showimage" />
+      <img src={medium} alt="showimage" className="show-img" />
       <div className="infocont">
-        <h5 className="mt-1">{name}</h5>
+        <h5 className="mt-1 show-name">{name}</h5>
         {' '}
         <h5>
           IMDB:
           {' '}
           <b>{average}</b>
         </h5>
-        <Link to={`/shows/${id}`} className="btn btn-danger">Show Info</Link>
+        <Link to={`/shows/${id}`} className="btn btn-danger show-btn">Show Info</Link>
       </div>
     </div>
   );
