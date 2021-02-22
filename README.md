@@ -40,6 +40,16 @@ $ Run `npm install` to install the necessary modules
 $ Run `npm run start` to open app in localhost.
 
 ```
+
+# Testing Project
+
+To run test in your terminal:
+
+```bash
+$ Run `npm run test` to run test
+$ enter `a` to run all the test in the app.
+
+```
 # Authors
 
 👤 **Avijit Karmaker**
