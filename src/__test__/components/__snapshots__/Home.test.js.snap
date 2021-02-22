@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Component renders correctly 1`] = `
+<div
+  className="home"
+>
+  <div
+    className="content d-block d-lg-flex justify-content-between align-items-center"
+  >
+    <div
+      className="leftcont text-white text-center"
+    >
+      <h2>
+        TVWORLD
+      </h2>
+      <h3
+        className="my-2"
+      >
+        Home of Your Entertainment
+      </h3>
+      <a
+        className="btn btn-warning rounded"
+        href="/shows"
+        onClick={[Function]}
+      >
+        Browse Shows
+      </a>
+    </div>
+    <div
+      className="vr d-none d-lg-block"
+    />
+    <div
+      className="rightcont d-none d-lg-block"
+    >
+      <img
+        alt="Show1"
+        className="tvshow s1"
+        src="tvshow1.jpeg"
+      />
+      <img
+        alt="Show1"
+        className="tvshow s2"
+        src="tvshow2.jpg"
+      />
+    </div>
+  </div>
+</div>
+`;

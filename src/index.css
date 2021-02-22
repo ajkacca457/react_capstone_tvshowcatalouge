@@ -1,13 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: #2e4053;
+  color: white;
+  text-align: center;
+  font-family: 'Slabo 27px', serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #f66;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #70bde8;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5993e5;
+}
+
+.navbar {
+  width: 100%;
+  font-family: 'Slabo 27px', serif;
+  font-size: 115%;
+  background-color: #154360;
+  top: 0;
+  left: 0;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #154360;
+  text-align: center;
+  width: 100%;
+  font-family: 'Slabo 27px', serif;
+}
+
+.home {
+  background-image: url("./images/homebg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.tvshow {
+  width: 250px;
+  height: 350px;
+}
+
+.s2 {
+  margin-left: -50px;
+  margin-top: -30px;
+  z-index: -100;
+}
+
+.content {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  font-family: 'Slabo 27px', serif;
+}
+
+.vr {
+  background-color: rgba(255, 255, 255, 0.06);
+  height: 50%;
+  width: 2px;
+}
+
+.about {
+  background-image: url("./images/homebg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.abtcont {
+  text-align: center;
+  font-family: 'Slabo 27px', serif;
+  width: 60%;
+  padding: 2%;
+  font-size: 115%;
+  border-radius: 5px;
+  color: black;
+}
+
+.aboutimg {
+  width: 90%;
+}
+
+.showlist {
+  background-image: url("./images/homebg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding-top: 6%;
+  min-height: 100vh;
+}
+
+.loading,
+.error {
+  background-image: url("./images/homebg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.showcont {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: auto;
+  padding: 7% 0;
+  width: 80%;
+  text-align: center;
+  grid-gap: 10px;
+}
+
+.showcont > :only-child {
+  grid-column: 1/-1;
+}
+
+.showitem {
+  background-color: white;
+  padding: 2% 1%;
+  font-family: 'Slabo 27px', serif;
+  border-radius: 5px;
+  color: black;
+}
+
+.filter {
+  width: 50%;
+  margin: 3% auto;
+}
+
+.showinfo {
+  background-image: url("./images/homebg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 8% 0;
+  height: 100vh;
+  text-align: center;
+}
+
+.showinfocont {
+  width: 70%;
+  margin: auto;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.showdetails {
+  flex: 2;
+  padding: 2%;
+  height: 400px;
+  text-align: center;
+  font-family: 'Slabo 27px', serif;
+  font-size: 115%;
+  overflow-y: scroll;
+  color: black;
+}
+
+.info-img {
+  width: 300px;
+  height: 400px;
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 601px) {
+  .leftcont {
+    padding-top: 200px;
+  }
+
+  .showcont {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .showinfo {
+    height: auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .leftcont {
+    padding-top: 200px;
+  }
+
+  .filter {
+    margin-top: 10%;
+  }
+
+  .showcont {
+    grid-template-columns: 1fr;
+  }
+
+  .showinfo {
+    height: auto;
+    padding-top: 15%;
+    padding-bottom: 15%;
+  }
+
+  .info-img {
+    width: 60%;
+    height: 200px;
+  }
+
+  .showinfocont {
+    width: 90%;
+    margin: auto;
+    border: 2px solid white;
+    border-radius: 5px;
+  }
+
+  .showdetails {
+    height: 400px;
+    text-align: center;
+    font-family: 'Slabo 27px', serif;
+    font-size: 90%;
+    overflow-y: scroll;
+    color: black;
+  }
 }

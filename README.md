@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# React-redux-capstone-tvshowcatalogue
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a capstone project of microverse redux-react module. This is a catalogue for tv shows that displays information about a particular show. User can search for their favourite tv by using the search input option. This single page application displays list of popular shows with thumbnail images. User can see more information about their favourite show by clicking on the show info button. Individual page of the show provides overview of the show, summary, schedule time and date, it's current status etc. This application uses redux to store data and to serve data. React-router was used to define several links which makes the app useful.  
 
-## Available Scripts
+## Project Display
 
-In the project directory, you can run:
+![screenshot](./src/images/interface1.PNG)
+![screenshot](./src/images/interface2.PNG)
+![screenshot](./src/images/interface4.PNG)
+![screenshot](./src/images/interface3.PNG)
 
-### `npm start`
+## Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[TVWORLD](https://tvworld.netlify.app)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Built With
 
-### `npm test`
+- Html
+- Css
+- Vanila Js
+- Atom text editor
+- React Js
+- redux
+- react-redux
+- Npm
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Getting Started
 
-### `npm run build`
+To get a local copy of the repository please run the following commands on your terminal:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+$ cd <folder>
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+$ git clone `https://github.com/ajkacca457/react_capstone_tvshowcatalouge.git`
+$ cd react_capstone_tvshowcatalouge
+$ Run `npm install` to install the necessary modules
+$ Run `npm run start` to open app in localhost.
 
-### `npm run eject`
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Testing Project
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To run test in your terminal:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+$ Run `npm run test` to run test
+$ enter `a` to run all the test in the app.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+# Authors
 
-## Learn More
+👤 **Avijit Karmaker**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Github: [@Avijit](https://github.com/ajkacca457)
+- Linkedin: [@Avijit](https://www.linkedin.com/in/avijit-karmaker-8738a54)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🤝 Contributing
 
-### Code Splitting
+Contributions, issues and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Show your support
 
-### Analyzing the Bundle Size
+Give a ⭐️ if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Copyright
+This is a project developed by Avijit.

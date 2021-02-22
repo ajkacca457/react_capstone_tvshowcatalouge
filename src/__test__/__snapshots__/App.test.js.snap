@@ -1,0 +1,142 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Component renders correctly 1`] = `
+<div
+  className="App"
+>
+  <nav
+    className="navbar navbar-expand-lg px-4 position-fixed"
+  >
+    <img
+      alt="tvshowlogo"
+      src="navlogo.png"
+      style={
+        Object {
+          "height": "35px",
+          "width": "35px",
+        }
+      }
+    />
+    <h5
+      className="ml-3 text-white"
+    >
+      TVWORLD
+    </h5>
+    <button
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      className="navbar-toggler"
+      data-target="#navbarSupportedContent"
+      data-toggle="collapse"
+      type="button"
+    >
+      <i
+        className="fas fa-bars text-light"
+      />
+    </button>
+    <div
+      className="collapse navbar-collapse"
+      id="navbarSupportedContent"
+    >
+      <ul
+        className="navbar-nav m-auto text-center"
+      >
+        <li
+          className="nav-item active mr-2"
+        >
+          <a
+            className="nav-link text-white"
+            href="/home"
+            onClick={[Function]}
+          >
+            <i
+              className="fas fa-home mr-1"
+            />
+            Home
+          </a>
+        </li>
+        <li
+          className="nav-item mr-2"
+        >
+          <a
+            className="nav-link text-white"
+            href="/shows"
+            onClick={[Function]}
+          >
+            <i
+              className="fas fa-tv mr-1"
+            />
+            TV shows
+          </a>
+        </li>
+        <li
+          className="nav-item"
+        >
+          <a
+            className="nav-link text-white"
+            href="/about"
+            onClick={[Function]}
+          >
+            <i
+              className="fas fa-info-circle mr-1"
+            />
+            About
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div
+    className="home"
+  >
+    <div
+      className="content d-block d-lg-flex justify-content-between align-items-center"
+    >
+      <div
+        className="leftcont text-white text-center"
+      >
+        <h2>
+          TVWORLD
+        </h2>
+        <h3
+          className="my-2"
+        >
+          Home of Your Entertainment
+        </h3>
+        <a
+          className="btn btn-warning rounded"
+          href="/shows"
+          onClick={[Function]}
+        >
+          Browse Shows
+        </a>
+      </div>
+      <div
+        className="vr d-none d-lg-block"
+      />
+      <div
+        className="rightcont d-none d-lg-block"
+      >
+        <img
+          alt="Show1"
+          className="tvshow s1"
+          src="tvshow1.jpeg"
+        />
+        <img
+          alt="Show1"
+          className="tvshow s2"
+          src="tvshow2.jpg"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="footer text-white pt-3"
+  >
+    <p>
+      © & Project made by Avijit, Microverse
+    </p>
+  </div>
+</div>
+`;
